@@ -1,7 +1,7 @@
 ---
-title: "x"
+title: "Group Presentation"
 subtitle: "CASA0023"
-author: "by y"
+author: "by Remotley Sensless"
 institute: "CASA, UCL"
 date: "2023/03/12 (updated: `r Sys.Date()`)"
 output:
@@ -38,11 +38,45 @@ class: inverse, center, middle
 
 ---
 # Approach
-## Methods
+## Methods - Site Suitablity Analysis
+Using existing data to identify the optimal locations for future forests within and around Leicester, UK. 
+
+.pull-left[
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = LR]
+
+a [label = 'Suitable Site', shape = square, fillcolor = Black]
+b [label = 'Prevlaining Wind Direction']
+c [label = 'Pollution Concentration']
+d [label = 'Existing infrastructure']
+
+
+{b c d} -> a
+}")
+```
+]
+
+.pull-right[
+```{r echo=FALSE}
+knitr::include_graphics('https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png')
+```
+
+
+Image credit: [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png)
+
+]
 
 ---
 # Approach
 ## Limitation
 
+
+---
+# Ways to make money
+- Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
+- Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
 
 ---
