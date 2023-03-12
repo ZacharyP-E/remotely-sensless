@@ -13,12 +13,12 @@ output:
       countIncrementalSlides: false
 
 ---
-## Summary
+# Problem Definition
 
 x
 
 ---
-# Summary
+# Problem Definition
 
 
 y
@@ -32,7 +32,17 @@ class: inverse, center, middle
 
 
 ---
-# z
+# Approach
+## Data
+
+
+---
+# Approach
+## Methods
+
+---
+# Approach
+## Limitation
 
 
 ---
