@@ -120,6 +120,8 @@ x
 # Project Plan
 
 ```{r echo=FALSE}
+devtools::install_github('Kitware/candela', subdir='R/candela', dependencies = TRUE)
+
 library(candela)
 
 data <- list(
