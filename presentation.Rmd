@@ -13,9 +13,31 @@ output:
       countIncrementalSlides: false
 
 ---
+
+```{r include=FALSE}
+library(RefManageR)
+library(knitcitations)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("./References.bib", check = FALSE)
+
+```
+
+
+
 # Problem Definition
 
-x
+- Leicester generates relatively low levels of PM2, but has high rates of avoidable deaths due to poor air quality compared to other UK cities `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`
+
+- The Leicester council has attributed this to polluted air being blown in from neighbouring cities `r Citep(myBib, "birdLeicesterNamedOne2018")`
+
+
+
 
 ---
 # Problem Definition
