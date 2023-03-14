@@ -4,10 +4,10 @@
     <title>Group Presentation</title>
     <meta charset="utf-8" />
     <meta name="author" content="by Remotley Sensless" />
-    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-    <script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
     <script src="libs/viz-1.8.2/viz.js"></script>
     <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
     <script src="libs/grViz-binding-1.0.9/grViz.js"></script>
@@ -51,8 +51,11 @@ class: center, middle, inverse, title-slide
 
 - Leicester generates relatively low levels of PM2, but has high rates of avoidable deaths due to poor air quality compared to other UK cities ([Centre for Cities, 2020](#bib-centreforcitiesHoldingOurBreath2020))
 
-- The Leicester council has attributed this to polluted air being blown in from neighbouring cities &lt;a name=cite-birdLeicesterNamedOne2018&gt;&lt;/a&gt;([Bird, 2018](#bib-birdLeicesterNamedOne2018))
+- The Leicester council has attributed this to polluted air being blown in from neighbouring cities ([Bird, 2018](#bib-birdLeicesterNamedOne2018))
 
+&lt;img src="images/pollution.jpg" width="40%" /&gt;
+.small[[Source: Leicestershire City Council](https://politics.leics.gov.uk/documents/s155032/Appendix%20-%20Air%20Quality%20Action%20Plan.pdf)
+]
 
 
 
@@ -70,56 +73,71 @@ class: inverse, center, middle
 # x 
 
 
----
-# Approach
-## Data
-
 
 ---
 # Approach
 ## Methods - Site Suitablity Analysis
-Using existing data to identify the optimal locations for future forests within and around Leicester, UK. 
+Using existing data to identify the optimal locations for future forests within and around the city of Leicester, UK. 
+
+<div id="htmlwidget-a7b4d2b7946ef3e62f64" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a7b4d2b7946ef3e62f64">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Suitable Site\", shape = square, fillcolor = Black]\nc [label = \"Prevlaining Wind Direction\"]\nb [label = \"Pollution Concentration\"]\nd [label = \"Existing infrastructure\"]\n\n\n{b c d} -> a\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+
+---
+# Approach - Data
+## Pollution Concentration
+
 
 .pull-left[
-
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-54ec93c648fee938a67a" style="width:504px;height:504px;"></div>
-<script type="application/json" data-for="htmlwidget-54ec93c648fee938a67a">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Suitable Site\", shape = square, fillcolor = Black]\nb [label = \"Prevlaining Wind Direction\"]\nc [label = \"Pollution Concentration\"]\nd [label = \"Existing infrastructure\"]\n\n\n{b c d} -> a\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+image of air quality
 ]
+
+
 
 .pull-right[
-![](https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png)&lt;!-- --&gt;
-
-
-Image credit: [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png)
-
+text here
 ]
 
+---
+# Approach - Data
+## Prevailing Wind Direction
+
+
+---
+# Approach - Data
+## Existing Infrastructure
+
+x
 ---
 # Approach
 ## Limitation
 
 
 ---
-# Ways to make money
+# Return on Investment
 - Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
+- Increase in housing prices near to forests ([Daams, Sijtsma, and Veneri, 2019](#bib-daams2019)).
 - Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
 
 ---
-# Timeline
+# Project Plan
 
-<div id="htmlwidget-07af7c0aa36a025ad987" style="width:700px;height:200px;" class="candela html-widget "></div>
-<script type="application/json" data-for="htmlwidget-07af7c0aa36a025ad987">{"x":{"name":"GanttChart","options":{"data":[{"name":"Do this","level":1,"start":0,"end":5},{"name":"This part 1","level":2,"start":0,"end":3},{"name":"This part 2","level":2,"start":3,"end":5},{"name":"Then that","level":1,"start":5,"end":15},{"name":"That part 1","level":2,"start":5,"end":10},{"name":"That part 2","level":2,"start":10,"end":15}],"label":"name","start":"start","end":"end","level":"level"}},"evals":[],"jsHooks":[]}</script>
-
-
----
-# Timeline 2
-
-<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-226a4cc5e35362fd8f5e" style="width:504px;height:504px;"></div>
-<script type="application/json" data-for="htmlwidget-226a4cc5e35362fd8f5e">{"x":{"diagram":"\ngantt\ndateFormat  YYYY-MM-DD\ntitle A Very Nice Gantt Diagram\n\nsection Basic Tasks\nThis is completed             :done,          first_1,    2014-01-06, 2014-01-08\nThis is active                :active,        first_2,    2014-01-09, 3d\nDo this later                 :               first_3,    after first_2, 5d\nDo this after that            :               first_4,    after first_3, 5d\n\nsection Important Things\nCompleted, critical task      :crit, done,    import_1,   2014-01-06,24h\nAlso done, also critical      :crit, done,    import_2,   after import_1, 2d\nDoing this important task now :crit, active,  import_3,   after import_2, 3d\nNext critical task            :crit,          import_4,   after import_3, 5d\n\nsection The Extras\nFirst extras                  :active,        extras_1,   after import_4,  3d\nSecond helping                :               extras_2,   after extras_1, 20h\nMore of the extras            :               extras_3,   after extras_1, 48h\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eb319ad6d7b9a8729b57" style="width:700px;height:200px;" class="candela html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb319ad6d7b9a8729b57">{"x":{"name":"GanttChart","options":{"data":[{"name":"Do this","level":1,"start":0,"end":5},{"name":"This part 1","level":2,"start":0,"end":3},{"name":"This part 2","level":2,"start":3,"end":5},{"name":"Then that","level":1,"start":5,"end":15},{"name":"That part 1","level":2,"start":5,"end":10},{"name":"That part 2","level":2,"start":10,"end":15}],"label":"name","start":"start","end":"end","level":"level"}},"evals":[],"jsHooks":[]}</script>
 
 
 ---
+# Project Plan
 
+<div id="htmlwidget-552e956b33be1c1c48bc" style="width:504px;height:504px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-552e956b33be1c1c48bc">{"x":{"diagram":"\ngantt\ndateFormat  YYYY-MM-DD\ntitle A Very Nice Gantt Diagram\n\nsection Basic Tasks\nThis is completed             :done,          first_1,    2014-01-06, 2014-01-08\nThis is active                :active,        first_2,    2014-01-09, 3d\nDo this later                 :               first_3,    after first_2, 5d\nDo this after that            :               first_4,    after first_3, 5d\n\nsection Important Things\nCompleted, critical task      :crit, done,    import_1,   2014-01-06,24h\nAlso done, also critical      :crit, done,    import_2,   after import_1, 2d\nDoing this important task now :crit, active,  import_3,   after import_2, 3d\nNext critical task            :crit,          import_4,   after import_3, 5d\n\nsection The Extras\nFirst extras                  :active,        extras_1,   after import_4,  3d\nSecond helping                :               extras_2,   after extras_1, 20h\nMore of the extras            :               extras_3,   after extras_1, 48h\n"},"evals":[],"jsHooks":[]}</script>
+
+
+---
+# Integration to business as usual
+## Existing teams? 
+
+[Existing tree strategy](https://www.leicester.gov.uk/content/tree-strategy-21-22/)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

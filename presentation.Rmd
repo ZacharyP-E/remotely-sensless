@@ -36,6 +36,11 @@ myBib <- ReadBib("./References.bib", check = FALSE)
 
 - The Leicester council has attributed this to polluted air being blown in from neighbouring cities `r Citep(myBib, "birdLeicesterNamedOne2018")`
 
+```{r echo=FALSE, out.width='40%'}
+knitr::include_graphics('images/pollution.jpg')
+```
+.small[[Source: Leicestershire City Council](https://politics.leics.gov.uk/documents/s155032/Appendix%20-%20Air%20Quality%20Action%20Plan.pdf)
+]
 
 
 
@@ -81,13 +86,10 @@ d [label = 'Existing infrastructure']
 
 
 .pull-left[
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('images/pollution.jpg')
-```
-.small[[Source: Leicestershire City Council](https://politics.leics.gov.uk/documents/s155032/Appendix%20-%20Air%20Quality%20Action%20Plan.pdf)
-]]
-
+image of air quality
 ]
+
+
 
 .pull-right[
 text here
@@ -109,13 +111,13 @@ x
 
 
 ---
-# Ways to make money
+# Return on Investment
 - Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
 - Increase in housing prices near to forests `r Citep(myBib, "daams2019")`.
 - Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
 
 ---
-# Timeline
+# Project Plan
 
 ```{r echo=FALSE}
 library(candela)
@@ -137,7 +139,7 @@ candela('GanttChart',
 
 
 ---
-# Timeline 2
+# Project Plan
 
 ```{r echo=FALSE}
 library(DiagrammeR)
@@ -168,4 +170,7 @@ More of the extras            :               extras_3,   after extras_1, 48h
 
 
 ---
+# Integration to business as usual
+## Existing teams? 
 
+[Existing tree strategy](https://www.leicester.gov.uk/content/tree-strategy-21-22/)
