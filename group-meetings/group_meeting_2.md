@@ -24,7 +24,7 @@ format:
     highlight-style: github
 fig-pos: 'H' 
 ---
-Github repo needs to be made. 
+A Github repo needs to be made. 
 
 Presentation to be made in Xaringain. 
 
@@ -32,26 +32,26 @@ Presentation to be made in Xaringain.
 
 Example question: 
 
-- To what extent does the implementation of forests in urban areas reduce airborne pollution concnetration? 
+- To what extent does the implementation of forests in urban areas reduce airborne pollution concentration? 
 
 
 
 ## Existing Policies:
 
-Policy about urban forest, severe air pollution coming from west. trying to mitigate pollution by building urban forests.
+Policy about the urban forest, severe air pollution coming from the west. trying to mitigate pollution by building urban forests.
 
-- Blockage forest (next to factory to not allow pollutants through the forest, densly planet).
-- Wind corridor (sparsely planets, where people spend most of their time e.g. schools, pollutants from cars can pass through quickly to make a wind corridor. allowing them to be dispursed).
-- Mitigation forest (normally planeted in some parks, main purpose to absorb air pollutants, reduce risidual PM).
+- Blockage forest (next to factory to not allow pollutants through the forest, densely planet).
+- Wind corridor (sparse planets, where people spend most of their time e.g. schools, pollutants from cars can pass through quickly to make a wind corridor. allowing them to be dispersed).
+- Mitigation forest (normally planted in some parks, mainly to absorb air pollutants, reduce residual PM).
 
 
 
 ## Problem Definition
 
-**Using remote sensing to optimise placement of forests to mitigate poor air pollution. ****
+**Using remote sensing to optimise the placement of forests to mitigate poor air pollution. ****
 
 - Placing some to absorb pollution. 
-- Some forests to blow wind away, needs strong prevaling wind. 
+- Some forests to blow wind away needs strong prevailing wind. 
 
 
 
@@ -66,14 +66,14 @@ Considering:
 
 
 
-Starting with Seoul as a case study, to provide a basis/ example on how to imporve your urban air quality. 
+Starting with Seoul as a case study, to provide a basis/ example of how to improve your urban air quality. 
 
-**Using lessons Learnt in Seoul to inform urban planning policy in Leicester, with regards to pollution mitigation measures. **
+**Using lessons Learnt in Seoul to inform urban planning policy in Leicester, with regard to pollution mitigation measures. **
 
-## Possible other city: 
+## Possible another city: 
 
 - **Leicester, UK**
-  - Blames its poor air pollution to neighbouring cities of Manchester, Liverpool, and Leeds. [[Link]](https://www.leicestermercury.co.uk/news/leicester-news/council-claims-dirty-neighbouring-cities-1534393)
+  - Blames its poor air pollution on neighbouring cities of Manchester, Liverpool, and Leeds. [[Link]](https://www.leicestermercury.co.uk/news/leicester-news/council-claims-dirty-neighbouring-cities-1534393)
   - Would the implementation of PM mitigation urban forests benefit their poor air quality? 
 
 
@@ -92,7 +92,7 @@ Mike to descibre problem with Leicester. + Phil
 
 ## Approach (40%)
 
-Zach to start methodology and limitations. + James
+Zach to start with methodology and limitations. + James
 
 - Data 
   - Pollution: MODIS? Landsat?

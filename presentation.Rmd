@@ -53,17 +53,11 @@ class: inverse, center, middle
 # x 
 
 
----
-# Approach
-## Data
-
 
 ---
 # Approach
 ## Methods - Site Suitablity Analysis
-Using existing data to identify the optimal locations for future forests within and around Leicester, UK. 
-
-.pull-left[
+Using existing data to identify the optimal locations for future forests within and around the city of Leicester, UK. 
 
 ```{r echo=FALSE}
 DiagrammeR::grViz("digraph {
@@ -71,26 +65,44 @@ DiagrammeR::grViz("digraph {
 graph[layout = dot, rankdir = LR]
 
 a [label = 'Suitable Site', shape = square, fillcolor = Black]
-b [label = 'Prevlaining Wind Direction']
-c [label = 'Pollution Concentration']
+c [label = 'Prevlaining Wind Direction']
+b [label = 'Pollution Concentration']
 d [label = 'Existing infrastructure']
 
 
 {b c d} -> a
 }")
 ```
+
+
+---
+# Approach - Data
+## Pollution Concentration
+
+
+.pull-left[
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('images/pollution.jpg')
+```
+.small[[Source: Leicestershire City Council](https://politics.leics.gov.uk/documents/s155032/Appendix%20-%20Air%20Quality%20Action%20Plan.pdf)
+]]
+
 ]
 
 .pull-right[
-```{r echo=FALSE}
-knitr::include_graphics('https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png')
-```
-
-
-Image credit: [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/solving-problems/GUID-C57C976E-7622-4815-BE51-74F31F3A16C9-web.png)
-
+text here
 ]
 
+---
+# Approach - Data
+## Prevailing Wind Direction
+
+
+---
+# Approach - Data
+## Existing Infrastructure
+
+x
 ---
 # Approach
 ## Limitation
@@ -99,6 +111,7 @@ Image credit: [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/extensions/sp
 ---
 # Ways to make money
 - Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
+- Increase in housing prices near to forests `r Citep(myBib, "daams2019")`.
 - Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
 
 ---
