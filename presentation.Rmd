@@ -60,11 +60,75 @@ knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
 ```
 
 ---
-class: inverse, center, middle
+# Slough's Current Approach on PM2.5
 
-# x 
+--
+
+* **Air Quality Action Policy** was established to be in line with UK Government's `Environment Act 1995` ([Slough Borough Council](https://democracy.slough.gov.uk/documents/s52745/Appendix%202%20-%20LES%20Technical%20Report%20Final%20Draft.pdf), 2018).
+
+--
+  
+  - City's on-going measures to control and reduce PM ([Slough Borough Council](https://www.slough.gov.uk/downloads/file/160/asr-2020), 2020):
+  
+    - `Smoke Control Orders`
+    - Acceleration of the uptake of `Ultra Low Emission Vehicles (ULEV)`
+    - Promotion of `best practice dust controls` on construction sites
+    - Reducing congestion by `reducing dependency on cars`
+    - `Urban Forests`
+
+---
+--
+
+### Most of measures call for changes in transport and construction.
+
+--
+
+### However, this would take a lot of time to accomplish transitions in these sectors
+
+--
+
+### There is a need for alternatives which bring prominent changes in PM levels with low budget
+
+--
+
+### And these are **Urban Forests!**
 
 
+---
+# Slough's Urban Forest Activities
+
+--
+* The city currently runs two urban forest activities: 
+  - `Urban Tree Challenge`: focus on NO2 and specifies 4 designated sites
+  - `Digital Urban Forest`: monitoring air quality using IoT devices
+  
+```{r}
+library(cowplot)
+ggdraw() + 
+  draw_image('images/site.png', width = 0.5) + 
+  draw_image('images/digi.png', width = 0.5, x = 0.5)
+```
+
+
+Slough's Urban Forest Programmes (Source: [Slough Borough Council](https://www.slough.gov.uk/environment/trees-hedges-1/8), n.d.)
+
+---
+# 3 Types of PM Urban Forests
+
+- `PM Blockage Urban Forests`: 1,800 trees/ha
+- `PM Mitigation Urban Forests`: 800 - 1,000 trees/ha
+- `Wind Corridor Urban Forests`: Less than 500 trees/ha
+
+```{r echo=FALSE, out.width="100%", out.height="40%", fig.align='center', fig.cap="PM Urban Forest Types (Source: Edited from Korea Forest Service, n.d)"}
+knitr::include_graphics('images/type.png')
+```
+---
+# Why PM Urban Forests?
+
+- Urban forest types tailored for PM reduction suit better 
+- Increase City's Green Cover which is below national standard 20% ([Slough Borough Council](https://www.slough.gov.uk/urbantree), n.d)
+- Urban Forests could achieve rather prominent decrease in PM
+- Low cost
 
 ---
 # Approach
