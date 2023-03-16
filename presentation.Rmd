@@ -32,14 +32,16 @@ myBib <- ReadBib("./References.bib", check = FALSE)
 
 # Problem Definition
 
-- Leicester generates relatively low levels of PM2, but has high rates of avoidable deaths due to poor air quality compared to other UK cities `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`
+.pull-left[- UN SDG 11.6: By 2030, reduce the adverse per capita environmental impact of cities, including by *paying special attention to air quality* and municipal and other waste management
 
-- The Leicester council has attributed this to polluted air being blown in from neighbouring cities `r Citep(myBib, "birdLeicesterNamedOne2018")`
+- In the UK, many cities have high levels of PM2.5 and NO2 concentration.
 
-```{r echo=FALSE, out.width='40%'}
-knitr::include_graphics('images/pollution.jpg')
+- In the South East, this is partly due to emissions from London and Europe `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`]
+
+```{r echo=FALSE, out.width='50%', fig.align='right'}
+knitr::include_graphics('images/Figure-2-NO2-PM2.5-Background-Concentration.png')
 ```
-.small[[Source: Leicestershire City Council](https://politics.leics.gov.uk/documents/s155032/Appendix%20-%20Air%20Quality%20Action%20Plan.pdf)
+.small[[Source: Centre for Cities](https://www.centreforcities.org/reader/cities-outlook-2020/air-quality-cities/)
 ]
 
 
@@ -48,9 +50,14 @@ knitr::include_graphics('images/pollution.jpg')
 # Problem Definition
 
 
-y
+* The health consequences of these high emissions are significant for the UK: 
+  - Estimated 20 000 hospital emissions per year
+  - Up to "2.5 million new cases of coronary heart disease, stroke, lung cancer and other health conditions by 2035 if pollution levels remain the same"** (CITE)**
+* Slough is particularly badly affected: Over 6% of deaths in the city are attributable to PM2.5 pollution `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`:
 
-
+```{r echo=FALSE}
+knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
+```
 
 ---
 class: inverse, center, middle
