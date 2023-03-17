@@ -102,15 +102,13 @@ knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
   - `Urban Tree Challenge`: focus on NO2 and specifies 4 designated sites
   - `Digital Urban Forest`: monitoring air quality using IoT devices
   
-```{r}
-library(cowplot)
-ggdraw() + 
-  draw_image('images/site.png', width = 0.5) + 
-  draw_image('images/digi.png', width = 0.5, x = 0.5)
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'center', fig.cap= "Slough's Urban Forest Programmes (Source: [Slough Borough Council](https://www.slough.gov.uk/environment/trees-hedges-1/8), n.d.)"}
+
+knitr::include_graphics(c('images/site.png', 'images/digi.png'))
 ```
 
 
-Slough's Urban Forest Programmes (Source: [Slough Borough Council](https://www.slough.gov.uk/environment/trees-hedges-1/8), n.d.)
+
 
 ---
 # 3 Types of PM Urban Forests
