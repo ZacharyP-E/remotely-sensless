@@ -51,7 +51,7 @@ knitr::include_graphics('images/Figure-2-NO2-PM2.5-Background-Concentration.png'
 
 
 * The health consequences of these high emissions are significant for the UK: 
-  - Estimated 20 000 hospital emissions per year
+  - Estimated 20 000 hospital admissions per year
   - Up to "2.5 million new cases of coronary heart disease, stroke, lung cancer and other health conditions by 2035 if pollution levels remain the same"** (CITE)**
 * Slough is particularly badly affected: Over 6% of deaths in the city are attributable to PM2.5 pollution `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`:
 
