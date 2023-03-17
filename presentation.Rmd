@@ -51,7 +51,7 @@ knitr::include_graphics('images/Figure-2-NO2-PM2.5-Background-Concentration.png'
 
 
 * The health consequences of these high emissions are significant for the UK: 
-  - Estimated 20 000 hospital emissions per year
+  - Estimated 20 000 hospital admissions per year
   - Up to "2.5 million new cases of coronary heart disease, stroke, lung cancer and other health conditions by 2035 if pollution levels remain the same"** (CITE)**
 * Slough is particularly badly affected: Over 6% of deaths in the city are attributable to PM2.5 pollution `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`:
 
@@ -102,15 +102,13 @@ knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
   - `Urban Tree Challenge`: focus on NO2 and specifies 4 designated sites
   - `Digital Urban Forest`: monitoring air quality using IoT devices
   
-```{r}
-library(cowplot)
-ggdraw() + 
-  draw_image('images/site.png', width = 0.5) + 
-  draw_image('images/digi.png', width = 0.5, x = 0.5)
+```{r echo=FALSE, out.width= "50%", fig.show='hold', fig.align= 'center', fig.cap= "Slough's Urban Forest Programmes (Source: [Slough Borough Council](https://www.slough.gov.uk/environment/trees-hedges-1/8), n.d.)"}
+
+knitr::include_graphics(c('images/site.png', 'images/digi.png'))
 ```
 
 
-Slough's Urban Forest Programmes (Source: [Slough Borough Council](https://www.slough.gov.uk/environment/trees-hedges-1/8), n.d.)
+
 
 ---
 # 3 Types of PM Urban Forests
@@ -133,9 +131,9 @@ knitr::include_graphics('images/type.png')
 ---
 # Approach
 ## Methods - Site Suitablity Analysis
-Using existing data to identify the optimal locations for future forests within and around the city of Leicester, UK. 
+Using existing data to identify the optimal locations for future forests within and around the city of Slough, UK. 
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.align='center'}
 DiagrammeR::grViz("digraph {
   
 graph[layout = dot, rankdir = LR]
@@ -149,15 +147,43 @@ d [label = 'Existing infrastructure']
 {b c d} -> a
 }")
 ```
+---
+# Approach
+## Methods - Outputs
+Cartography, with geometry outlining suitable areas. 
+```{r echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics('images/site-suitability-map.png')
+```
+Figure Credit: `r Citep(myBib, "aburas2017")`
 
 
 ---
 # Approach - Data
+
 ## Pollution Concentration
+
+## Existing Infrastructure
+UK Center for Ecology and Hydrology [[Data]](https://www.ceh.ac.uk/data/ukceh-land-cover-maps).
+## Prevalining wind direction
+MET Office Wind Map [[Data]](https://www.metoffice.gov.uk/weather/maps-and-charts/wind-map#?bbox=[[43.16512263158296,-35.63964843750001],[63.509375401175134,27.641601562500004]]&model=ukmo-ukv&layer=wind-speed-and-direction)
+
+---
+# Integration to business as usual
+## Existing GIS teams 
+
+[Existing tree strategy](https://www.leicester.gov.uk/content/tree-strategy-21-22/) (old link to leicester, needs changing.)
+
+- The project will develop a workflow and methodology for future applications, allowing existing GIS analysts to re-run analysis in the future should it be needed. 
+
+---
+# Approach
+## Anticipated Limitation
 
 
 .pull-left[
-image of air quality
+- Data availability
+- Uncertainty
+- Subjectivity
 ]
 
 
@@ -165,27 +191,30 @@ image of air quality
 .pull-right[
 text here
 ]
-
----
-# Approach - Data
-## Prevailing Wind Direction
-
-
----
-# Approach - Data
-## Existing Infrastructure
-
-x
----
-# Approach
-## Limitation
-
-
 ---
 # Return on Investment
 - Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
 - Increase in housing prices near to forests `r Citep(myBib, "daams2019")`.
 - Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
+
+---
+# Budget
+## Employees
+x test, the potential for providing a training scheme? apprenticeship providing further benefit to the community being served. 
+
+```{r echo=FALSE, fig.align='center'}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = LR]
+
+a [label = 'Team Lead', shape = square, fillcolor = Black]
+c [label = 'Senior GIS Analyst']
+b [label = 'Junior GIS Analyst']
+
+
+a -> {b c}
+}")
+```
 
 ---
 # Project Plan
@@ -242,8 +271,4 @@ More of the extras            :               extras_3,   after extras_1, 48h
 ```
 
 
----
-# Integration to business as usual
-## Existing teams? 
 
-[Existing tree strategy](https://www.leicester.gov.uk/content/tree-strategy-21-22/)
