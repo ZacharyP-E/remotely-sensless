@@ -8,3 +8,4 @@ remotely-sensless.Rproj
 renv.lock
 renv/activate.R
 renv/settings.dcf
+images/.DS_Store

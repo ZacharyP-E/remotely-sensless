@@ -149,6 +149,134 @@ d [label = 'Existing infrastructure']
 ```
 ---
 # Approach
+## Satellite products to mitigate particulate matter (PM)
+
+Product|Temporal Resolution|Spatial Resolution|Source|Task
+--------|---------|-----------|-------------
+Multi-spectral imaging|10 days|10 m|Sentinel-2|land cover classification
+Land Cover|Yearly|10 m|UKCEH Land Cover Maps|land cover classification
+PM2.5|real-time|-|IoT Devices by Air Quality in England|Evaluate the effect of tree cover change on PM2.5
+Wind speed|monthly|10 m|ERA5|Map potential tree planting sites
+
+---
+# Approach
+## 1. Evaluate the effect of tree cover change on PM2.5 in each site
+
+.pull-left[
+```{r echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics("images/land_cover_classification.png")
+```
+Source: [UKSO](https://www.ukso.org/static-maps/land-cover-map.html)
+]
+
+.pull-right[
+1. Mapping tree cover area from Sentinel-2 by conducting land cover classification
++ **Input**
+  + Data: Sentinel-2 (10m)
+  + Label: UKCEH Land Cover Maps (10m)
++ **Methodology**: Conduct land cover classification models such as Random Forest / SVM / CNN to locate forest areas
++ **Output**: Forest areas (10m)
+
+]
+
+---
+# Approach
+## 1. Evaluate the effect of tree cover change on PM2.5 in each site (2)
+
+.pull-left[
+```{r echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics("images/land_cover_classification.png")
+```
+Source: [UKSO](https://www.ukso.org/static-maps/land-cover-map.html)
+]
+
+.pull-right[
+2.Estimate total annual change in PM2.5 removal from urban tree cover change
++ **Input**
+  + Forest areas 
+  + PM2.5 monitoring data
++ **Methodology**: Conduct regression model such as linear regression or GWR for each site 
++ **Output**: average PM2.5 removal rates in each site
+
+
+]
+
+---
+# Approach
+## 2. Map potential tree planting sites
+
+```{css echo=FALSE}
+.left-column {
+  float: left;
+  width: 30%;
+}
+.right-column {
+  float: right;
+  width: 70%;
+}
+.small-font {
+    font-size: 12px;
+    padding: 0em 0em 0em 0em;
+}
+```
+
+.left-column[
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("images/planting_strategy.png")
+```
+]
+
+.right-column[
+1. Selected from areas with high potential to remove PM2.5
++ **Input**: site-level PM2.5 removal rates, land cover map
++ **Methodology**: We estimate total annual change in PM2.5 removal from urban tree cover change by the following equation:
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("images/pm_removal_equation.png")
+```
+.small-font[
+Where Removal(PM2.5) is total annual change in PM2.5 removal from urban tree cover change, RemovalRate(PM2.5) is site-level average PM2.5 removal rates,  ForestAreaChanges is total forest areas changes from 2010 and i refers to site i
+]
++ **Output**: Potential tree planting sites to remove PM2.5
++ **Implementation**: Plant urban forests depending on distance to the city centre
+]
+
+---
+# Approach
+## 2. Map potential tree planting sites (2)
+
+```{css echo=FALSE}
+.left-column {
+  float: left;
+  width: 40%;
+}
+.right-column {
+  float: right;
+  width: 60%;
+}
+```
+
+.left-column[
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("images/urban_forest_prevailing_pm.png")
+```
+Source: [Jing Wang 2021](https://www.mdpi.com/2073-4433/12/11/1428)
+]
+
+.right-column[
+2.Prevailing pollution from neighbourhoods
++ **Input**
+  + ERA5 (10m) 
+  + PM2.5 monitoring data
++ **Methodology**: build the wind direction map from wind velocity data of ERA5 and select areas with high PM2.5 and being affected from neighbourhoods
++ **Output**: Planting location and wind direction map
++ **Implementation**: Plant PM blockage urban trees at the border city to block PM passing through
+
+]
+
+---
+
+
+# Approach
 ## Methods - Outputs
 Cartography, with geometry outlining suitable areas. 
 ```{r echo=FALSE, out.width='70%', fig.align='center'}
