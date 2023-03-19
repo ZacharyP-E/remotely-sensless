@@ -67,7 +67,7 @@ knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
 * **Air Quality Action Policy** was established to be in line with UK Government's `Environment Act 1995` ([Slough Borough Council](https://democracy.slough.gov.uk/documents/s52745/Appendix%202%20-%20LES%20Technical%20Report%20Final%20Draft.pdf), 2018).
 
 --
-  
+
   - City's on-going measures to control and reduce PM ([Slough Borough Council](https://www.slough.gov.uk/downloads/file/160/asr-2020), 2020):
   
     - `Smoke Control Orders`
@@ -343,6 +343,19 @@ b [label = 'Junior GIS Analyst']
 a -> {b c}
 }")
 ```
+
+---
+# Project Plan
+
+By using open source, freely available data, we aim to spend the majority of the budget on tree planting in collaboration with our partner charity, [Trees for Cities](https://www.treesforcities.org/). At GBP6 per tree, this will enable Slough to plant 60 000 trees, dramatically enhancing its existing green infrastructure and potentially reducing the harmful effects of PM2.5 concentration. We have also included a training output in our workplan, meaning that Slough will be equipped to continue using the model we build together past the lifecycle of this project. 
+
+
+
+| **Phase**                   | **Output**                                           | **Stakeholders**                             | **Budget** |
+| --------------------------- | ---------------------------------------------------- | -------------------------------------------- | ---------- |
+| Months 1-3: Work Package 1  | Data collection, initial model created, training     | Local Authority - consultation and training  | GBP70 000  |
+| Months 3-6: Work Package 2  | Identify suitable sites                              | Local Authority and residents                | GBP70 000  |
+| Months 6-12: Work Package 3 | Tree planting in collaboration with Trees For Cities | Local Authority, residents, Trees For Cities | GBP360 000 |
 
 ---
 # Project Plan
