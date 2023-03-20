@@ -53,8 +53,8 @@ knitr::include_graphics('images/Figure-2-NO2-PM2.5-Background-Concentration.png'
 * Estimated cost to society of air pollution in Slough: £40m / year `r Citep(myBib, "nancarrow2019")`
 * Slough is particularly badly affected: Over 6% of deaths in the city are attributable to PM2.5 pollution `r Citep(myBib, "centreforcitiesHoldingOurBreath2020")`:
 
-```{r echo=FALSE}
-knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
+```{r echo=FALSE, out.width= "75%", fig.align='center'}
+knitr::include_graphics('images/local-deaths.jpg')
 ```
 
 ---
