@@ -4,21 +4,13 @@
     <title>Group Presentation</title>
     <meta charset="utf-8" />
     <meta name="author" content="by Remotley Sensless" />
-    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.19/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-    <script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
     <script src="libs/viz-1.8.2/viz.js"></script>
     <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
     <script src="libs/grViz-binding-1.0.9/grViz.js"></script>
-    <script src="libs/candela-0.2.0/candela.js"></script>
-    <script src="libs/candela-binding-0.2.0/candela.js"></script>
-    <script src="libs/d3-3.3.8/d3.min.js"></script>
-    <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
-    <link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
-    <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
-    <script src="libs/chromatography-0.1/chromatography.js"></script>
-    <script src="libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -37,7 +29,7 @@ class: center, middle, inverse, title-slide
 ### CASA, UCL
 ]
 .date[
-### 2023/03/12 (updated: 2023-03-19)
+### 2023/03/12 (updated: 2023-03-20)
 ]
 
 ---
@@ -65,22 +57,20 @@ class: center, middle, inverse, title-slide
 # Problem Definition
 
 
-* The health consequences of these high emissions are significant for the UK: 
-  - Estimated 20 000 hospital admissions per year
-  - Up to "2.5 million new cases of coronary heart disease, stroke, lung cancer and other health conditions by 2035 if pollution levels remain the same"** (CITE)**
+* Estimated cost to society of air pollution in Slough: £40m / year ([Nancarrow, 2019](#bib-nancarrow2019))
 * Slough is particularly badly affected: Over 6% of deaths in the city are attributable to PM2.5 pollution ([Centre for Cities, 2020](#bib-centreforcitiesHoldingOurBreath2020)):
 
 &lt;img src="images/Figure-10-Proportion-of-local-deaths.png" width="1792" /&gt;
 
 ---
-# Slough's Current Approach on PM2.5
+# Problem Definition - Slough's Current Approach on PM2.5
 
---
+
 
 * **Air Quality Action Policy** was established to be in line with UK Government's `Environment Act 1995` ([Slough Borough Council](https://democracy.slough.gov.uk/documents/s52745/Appendix%202%20-%20LES%20Technical%20Report%20Final%20Draft.pdf), 2018).
 
---
-  
+
+
   - City's on-going measures to control and reduce PM ([Slough Borough Council](https://www.slough.gov.uk/downloads/file/160/asr-2020), 2020):
   
     - `Smoke Control Orders`
@@ -89,28 +79,12 @@ class: center, middle, inverse, title-slide
     - Reducing congestion by `reducing dependency on cars`
     - `Urban Forests`
 
----
---
-
-### Most of measures call for changes in transport and construction.
-
---
-
-### However, this would take a lot of time to accomplish transitions in these sectors
-
---
-
-### There is a need for alternatives which bring prominent changes in PM levels with low budget
-
---
-
-### And these are **Urban Forests!**
 
 
 ---
-# Slough's Urban Forest Activities
+# Problem Definition - Slough's Urban Forest Activities
 
---
+
 * The city currently runs two urban forest activities: 
   - `Urban Tree Challenge`: focus on NO2 and specifies 4 designated sites
   - `Digital Urban Forest`: monitoring air quality using IoT devices
@@ -124,7 +98,7 @@ class: center, middle, inverse, title-slide
 
 
 ---
-# 3 Types of PM Urban Forests
+#Approach -  3 Types of PM Urban Forests
 
 - `PM Blockage Urban Forests`: 1,800 trees/ha
 - `PM Mitigation Urban Forests`: 800 - 1,000 trees/ha
@@ -135,7 +109,7 @@ class: center, middle, inverse, title-slide
 &lt;p class="caption"&gt;PM Urban Forest Types (Source: Edited from Korea Forest Service, n.d)&lt;/p&gt;
 &lt;/div&gt;
 ---
-# Why PM Urban Forests?
+#Approach - Why PM Urban Forests?
 
 - Urban forest types tailored for PM reduction suit better 
 - Increase City's Green Cover which is below national standard 20% ([Slough Borough Council](https://www.slough.gov.uk/urbantree), n.d)
@@ -147,18 +121,18 @@ class: center, middle, inverse, title-slide
 ## Methods - Site Suitablity Analysis
 Using existing data to identify the optimal locations for future forests within and around the city of Slough, UK. 
 
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d0b780bd493ed879cebf" style="width:504px;height:504px;"></div>
-<script type="application/json" data-for="htmlwidget-d0b780bd493ed879cebf">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Suitable Site\", shape = square, fillcolor = Black]\nc [label = \"Prevlaining Wind Direction\"]\nb [label = \"Pollution Concentration\"]\nd [label = \"Existing infrastructure\"]\n\n\n{b c d} -> a\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8384a864b03b68daee9b" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8384a864b03b68daee9b">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Suitable Site\", shape = square, fillcolor = Black]\nc [label = \"Prevlaining Wind Direction\"]\nb [label = \"Pollution Concentration\"]\nd [label = \"Existing infrastructure\"]\n\n\n{b c d} -> a\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 ---
-# Approach
-## Satellite products to mitigate particulate matter (PM)
+# Approach - Satellite products to mitigate particulate matter (PM)
 
 Product|Temporal Resolution|Spatial Resolution|Source|Task
 --------|---------|-----------|-------------
 Multi-spectral imaging|10 days|10 m|Sentinel-2|land cover classification
 Land Cover|Yearly|10 m|UKCEH Land Cover Maps|land cover classification
-PM2.5|real-time|-|IoT Devices by Air Quality in England|Evaluate the effect of tree cover change on PM2.5
-Wind speed|monthly|10 m|ERA5|Map potential tree planting sites
+PM2.5|Real-time|-|IoT Devices by Air Quality in England|Evaluate the effect of tree cover change on PM2.5
+Air Pollution|&lt;1 day|1000m|Sentinel 5P|Identify areas of high pollution concentration
+Wind speed|Monthly|10 m|ERA5|Map potential tree planting sites
 
 ---
 # Approach
@@ -276,32 +250,17 @@ Figure Credit: ([Aburas, Ho, Ramli et al., 2017](#bib-aburas2017))
 
 
 ---
-# Approach - Data
-
-## Pollution Concentration
-
-## Existing Infrastructure
-UK Center for Ecology and Hydrology [[Data]](https://www.ceh.ac.uk/data/ukceh-land-cover-maps).
-## Prevalining wind direction
-MET Office Wind Map [[Data]](https://www.metoffice.gov.uk/weather/maps-and-charts/wind-map#?bbox=[[43.16512263158296,-35.63964843750001],[63.509375401175134,27.641601562500004]]&amp;model=ukmo-ukv&amp;layer=wind-speed-and-direction)
-
----
-# Integration to business as usual
-## Existing GIS teams 
-
-[Existing tree strategy](https://www.leicester.gov.uk/content/tree-strategy-21-22/) (old link to leicester, needs changing.)
-
-- The project will develop a workflow and methodology for future applications, allowing existing GIS analysts to re-run analysis in the future should it be needed. 
-
----
 # Approach
-## Anticipated Limitation
+## Anticipated Limitation and Risks
 
 
 .pull-left[
-- Data availability
-- Uncertainty
-- Subjectivity
+- Subjectivity of output
+- Possible modelling inaccuracy 
+  - Unusal events impacting concentration of PM (COVID)
+- Difficulty identifying suitable sites
+- Change in price of trees
+
 ]
 
 
@@ -309,47 +268,31 @@ MET Office Wind Map [[Data]](https://www.metoffice.gov.uk/weather/maps-and-chart
 .pull-right[
 text here
 ]
+
+
 ---
-# Return on Investment
-- Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (cardiovascular?).
+# Project Plan
+
+By using open source, freely available data, we aim to spend the majority of the budget on tree planting in collaboration with our partner charity, [Trees for Cities](https://www.treesforcities.org/). At GBP6 per tree, this will enable Slough to plant 60 000 trees, dramatically enhancing its existing green infrastructure and potentially reducing the harmful effects of PM2.5 concentration. We have also included a training output in our workplan, meaning that Slough will be equipped to continue using the model we build together past the lifecycle of this project. 
+
+
+
+| **Phase**                   | **Output**                                           | **Stakeholders**                             | **Budget** |
+| --------------------------- | ---------------------------------------------------- | -------------------------------------------- | ---------- |
+| Months 1-3: Work Package 1  | Data collection, initial model created, training     | Local Authority - consultation and training  | GBP70 000  |
+| Months 3-6: Work Package 2  | Identify suitable sites                              | Local Authority and residents                | GBP70 000  |
+| Months 6-12: Work Package 3 | Tree planting in collaboration with Trees For Cities | Local Authority, residents, Trees For Cities | GBP360 000 |
+
+---
+# Project Plan - Return on Investment
+- Reduction in premature mortality, reduced burden on healthcare (NHS) leading to savings in related departments (Estimated £40m / year)([Nancarrow, 2019](#bib-nancarrow2019)).
 - Increase in housing prices near to forests ([Daams, Sijtsma, and Veneri, 2019](#bib-daams2019)).
 - Licencing code to other cities, allowing them to fix their issues with neighbouring pollution. 
 
----
-# Budget
-## Employees
-x test, the potential for providing a training scheme? apprenticeship providing further benefit to the community being served. 
-
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8bb51497add2d607ced4" style="width:504px;height:504px;"></div>
-<script type="application/json" data-for="htmlwidget-8bb51497add2d607ced4">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Team Lead\", shape = square, fillcolor = Black]\nc [label = \"Senior GIS Analyst\"]\nb [label = \"Junior GIS Analyst\"]\n\n\na -> {b c}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-
----
-# Project Plan
-
-- Work package 1: Data collection, model creation (3 months)
-  - Stakeholder engagement: Local Authority, 
-
----
-# Project Plan
 
 
-```
-## Skipping install of 'candela' from a github remote, the SHA1 (51d7b2b9) has not changed since last install.
-##   Use `force = TRUE` to force installation
-```
-
-<div id="htmlwidget-129994fc08fa35680b21" style="width:700px;height:200px;" class="candela html-widget "></div>
-<script type="application/json" data-for="htmlwidget-129994fc08fa35680b21">{"x":{"name":"GanttChart","options":{"data":[{"name":"Do this","level":1,"start":0,"end":5},{"name":"This part 1","level":2,"start":0,"end":3},{"name":"This part 2","level":2,"start":3,"end":5},{"name":"Then that","level":1,"start":5,"end":15},{"name":"That part 1","level":2,"start":5,"end":10},{"name":"That part 2","level":2,"start":10,"end":15}],"label":"name","start":"start","end":"end","level":"level"}},"evals":[],"jsHooks":[]}</script>
-
-
----
-# Project Plan
-
-<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ec336e23608979425238" style="width:504px;height:504px;"></div>
-<script type="application/json" data-for="htmlwidget-ec336e23608979425238">{"x":{"diagram":"\ngantt\ndateFormat  YYYY-MM-DD\ntitle A Very Nice Gantt Diagram\n\nsection Basic Tasks\nThis is completed             :done,          first_1,    2014-01-06, 2014-01-08\nThis is active                :active,        first_2,    2014-01-09, 3d\nDo this later                 :               first_3,    after first_2, 5d\nDo this after that            :               first_4,    after first_3, 5d\n\nsection Important Things\nCompleted, critical task      :crit, done,    import_1,   2014-01-06,24h\nAlso done, also critical      :crit, done,    import_2,   after import_1, 2d\nDoing this important task now :crit, active,  import_3,   after import_2, 3d\nNext critical task            :crit,          import_4,   after import_3, 5d\n\nsection The Extras\nFirst extras                  :active,        extras_1,   after import_4,  3d\nSecond helping                :               extras_2,   after extras_1, 20h\nMore of the extras            :               extras_3,   after extras_1, 48h\n"},"evals":[],"jsHooks":[]}</script>
-
-
-
+&lt;img src="images/urban-forest.jpeg" width="70%" style="display: block; margin: auto;" /&gt;
+Figure Credit: ([Daniiielc, 2023](#bib-daniiielc))
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
