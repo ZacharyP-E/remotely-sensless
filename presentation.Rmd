@@ -72,7 +72,6 @@ knitr::include_graphics('images/Figure-10-Proportion-of-local-deaths.png')
     - Acceleration of the uptake of `Ultra Low Emission Vehicles (ULEV)`
     - Promotion of `best practice dust controls` on construction sites
     - Reducing congestion by `reducing dependency on cars`
-    - `Urban Forests`
 
 
 
