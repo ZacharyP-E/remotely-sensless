@@ -303,7 +303,7 @@ class: inverse, center, middle
 
 - Value: Open source, freely available data - consultant fees only charged for first 6 months (**£17,500/month** for entire team)
 - Allows majority of budget for tree planting in collaboration with our partner charity, [Trees for Cities](https://www.treesforcities.org/)
-- At **£6** per tree, this will enable Slough to plant **60 000 tree's**
+- At **£6** per tree, this will enable Slough to plant **60 000 trees**
 - Stakeholder consultation at all points
 - Risk mitigation: training output in our workplan - Slough will be equipped to continue using the model beyond the lifecycle of this project. 
 
