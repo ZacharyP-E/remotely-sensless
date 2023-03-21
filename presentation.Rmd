@@ -122,7 +122,7 @@ DiagrammeR::grViz("digraph {
 graph[layout = dot, rankdir = LR]
 
 a [label = 'Suitable Site', shape = square, fillcolor = Black]
-c [label = 'Prevlaining Wind Direction']
+c [label = 'Prevailing Wind Direction']
 b [label = 'Pollution Concentration']
 d [label = 'Existing infrastructure']
 
