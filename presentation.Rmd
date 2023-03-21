@@ -116,21 +116,10 @@ knitr::include_graphics('images/type.png')
 ## Methods - Site Suitablity Analysis
 Using existing data to identify the optimal locations for future forests within and around the city of Slough, UK. 
 
-```{r echo=FALSE, out.width='90%', out.height= '60%'}
-DiagrammeR::grViz("digraph {
-  
-graph[layout = dot, rankdir = LR]
 
-a [label = 'Suitable Site', shape = square, fillcolor = Black]
-c [label = 'Prevailing Wind Direction']
-b [label = 'Pollution Concentration']
-d [label = 'Existing infrastructure']
-
-
-{b c d} -> a
-}")
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("images/flow.png")
 ```
-
 
 
 ---
